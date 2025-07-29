@@ -10,7 +10,6 @@ const ImageCard = () => {
       transition={{ duration: 0.4, ease: "easeOut" }}
       viewport={{ once: false, amount: 0.3 }}
     >
-      {/* Image Grid Container */}
       <Motion.div 
         className='grid grid-cols-1 md:grid-cols-3 gap-6 w-full max-w-6xl items-start'
         initial={{ opacity: 0 }}
@@ -18,7 +17,6 @@ const ImageCard = () => {
         transition={{ duration: 0.5, delay: 0.1 }}
         viewport={{ once: false, amount: 0.3 }}
       >
-        {/* First Image */}
         <Motion.div 
           className='relative overflow-hidden shadow-md'
           initial={{ opacity: 0, x: -30 }}
@@ -34,7 +32,6 @@ const ImageCard = () => {
           />
         </Motion.div>
 
-        {/* Second Image */}
         <Motion.div 
           className='relative overflow-hidden shadow-md'
           initial={{ opacity: 0, y: 30 }}
@@ -50,7 +47,6 @@ const ImageCard = () => {
           />
         </Motion.div>
 
-        {/* Third Image with Paragraph */}
         <Motion.div 
           className='flex flex-col space-y-4'
           initial={{ opacity: 0, x: 30 }}
@@ -69,7 +65,6 @@ const ImageCard = () => {
             />
           </Motion.div>
           
-          {/* Paragraph below third image */}
           <Motion.p 
             className='text-xs sm:text-sm md:text-base leading-relaxed text-gray-600 px-2 text-justify'
             initial={{ opacity: 0, y: 10 }}

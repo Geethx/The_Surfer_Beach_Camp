@@ -38,7 +38,6 @@ const SurfDays = () => {
       transition={{ duration: 0.4, ease: "easeOut" }}
       viewport={{ once: false, amount: 0.1 }}
     >
-      {/* Main Title */}
       <Motion.h1 
         className='text-lg sm:text-xl md:text-2xl lg:text-3xl mt-4 mb-8 font-bold text-center text-neutral-400'
         initial={{ opacity: 0, y: 20 }}
@@ -49,7 +48,6 @@ const SurfDays = () => {
         What Your Surf Days Look Like
       </Motion.h1>
 
-      {/* Content Container */}
       <div className='w-full max-w-7xl space-y-12'>
         {surfDaysData.map((item, index) => (
           <Motion.div
@@ -62,7 +60,6 @@ const SurfDays = () => {
             transition={{ duration: 0.4, delay: index * 0.1 }}
             viewport={{ once: false, amount: 0.2 }}
           >
-            {/* Image Section */}
             <Motion.div 
               className='lg:w-1/3 w-full max-w-xs'
               initial={{ opacity: 0, scale: 0.95 }}
@@ -78,7 +75,6 @@ const SurfDays = () => {
               />
             </Motion.div>
 
-            {/* Text Section */}
             <Motion.div 
               className='lg:w-2/3 w-full flex items-center'
               initial={{ opacity: 0, x: item.imagePosition === 'left' ? 30 : -30 }}

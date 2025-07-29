@@ -95,7 +95,6 @@ const Packages = () => {
       transition={{ duration: 0.4, ease: "easeOut" }}
       viewport={{ once: false, amount: 0.1 }}
     >
-      {/* Main Title */}
       <Motion.h1 
         className='text-lg sm:text-xl md:text-2xl lg:text-3xl mt-4 mb-8 font-bold text-center text-neutral-400'
         initial={{ opacity: 0, y: 20 }}
@@ -106,7 +105,6 @@ const Packages = () => {
         Book Your Surf Camp Experience
       </Motion.h1>
 
-      {/* Packages Container */}
       <div className='w-full max-w-4xl space-y-12'>
         {packages.map((pkg, index) => (
           <Motion.div
@@ -118,9 +116,7 @@ const Packages = () => {
             viewport={{ once: false, amount: 0.2 }}
             whileHover={{ y: -2, transition: { duration: 0.2 } }}
           >
-            {/* Image and Content Row */}
             <div className='flex flex-col lg:flex-row items-start gap-6'>
-              {/* Image Section */}
               <Motion.div 
                 className='lg:w-1/3 w-full'
                 initial={{ opacity: 0, scale: 0.98 }}
@@ -136,7 +132,6 @@ const Packages = () => {
                 />
               </Motion.div>
 
-              {/* Content Section */}
               <Motion.div 
                 className='lg:w-2/3 w-full p-4 lg:p-6'
                 initial={{ opacity: 0, x: 15 }}
@@ -144,7 +139,6 @@ const Packages = () => {
                 transition={{ duration: 0.25, delay: index * 0.04 }}
                 viewport={{ once: false, amount: 0.2 }}
               >
-                {/* Package Title & Description */}
                 <Motion.div 
                   className='mb-4'
                   initial={{ opacity: 0, y: 8 }}
@@ -161,7 +155,6 @@ const Packages = () => {
                   <p className='text-xs sm:text-sm text-neutral-500'>{pkg.features}</p>
                 </Motion.div>
 
-                {/* Pricing Section */}
                 <Motion.div 
                   className='mb-4'
                   initial={{ opacity: 0, y: 8 }}
@@ -185,10 +178,8 @@ const Packages = () => {
               </Motion.div>
             </div>
 
-            {/* Horizontal Divider Line */}
             <hr className='border-t border-neutral-300 mx-4 lg:mx-6' />
 
-            {/* Following Included Section - Full Width Below */}
             <Motion.div
               className='w-full px-4 lg:px-6 pb-4 pt-4 lg:pb-6'
               initial={{ opacity: 0, y: 8 }}
