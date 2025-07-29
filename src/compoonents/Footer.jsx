@@ -7,10 +7,10 @@ const Footer = () => (
         <div className="flex flex-col items-center md:items-start mb-6 sm:mb-8 md:mb-0 md:mr-8 lg:mr-10 md:pr-8 lg:pr-10">
           <img src="/logo1.png" alt="The Surfer Logo" className="h-16 sm:h-18 md:h-20 w-auto mb-4 sm:mb-6" />
           <div className="flex gap-3 sm:gap-4">
-            <a href="#" className="bg-white/90 rounded-full p-1.5 sm:p-2 hover:bg-cyan-200 transition"><img src="/insta.png" alt="Instagram" className="h-5 sm:h-6 w-5 sm:w-6" /></a>
-            <a href="#" className="bg-white/90 rounded-full p-1.5 sm:p-2 hover:bg-cyan-200 transition"><img src="/fb.png" alt="Facebook" className="h-5 sm:h-6 w-5 sm:w-6" /></a>
-            <a href="#" className="bg-white/90 rounded-full p-1.5 sm:p-2 hover:bg-cyan-200 transition"><img src="/twt.png" alt="Twitter" className="h-5 sm:h-6 w-5 sm:w-6" /></a>
-            <a href="#" className="bg-white/90 rounded-full p-1.5 sm:p-2 hover:bg-cyan-200 transition"><img src="/yt.png" alt="YouTube" className="h-5 sm:h-6 w-5 sm:w-6" /></a>
+            <div className="bg-white/90 rounded-full p-1.5 sm:p-2 hover:bg-cyan-200 transition"><img src="/insta.png" alt="Instagram" className="h-5 sm:h-6 w-5 sm:w-6" /></div>
+            <div className="bg-white/90 rounded-full p-1.5 sm:p-2 hover:bg-cyan-200 transition"><img src="/fb.png" alt="Facebook" className="h-5 sm:h-6 w-5 sm:w-6" /></div>
+            <div className="bg-white/90 rounded-full p-1.5 sm:p-2 hover:bg-cyan-200 transition"><img src="/twt.png" alt="Twitter" className="h-5 sm:h-6 w-5 sm:w-6" /></div>
+            <div className="bg-white/90 rounded-full p-1.5 sm:p-2 hover:bg-cyan-200 transition"><img src="/yt.png" alt="YouTube" className="h-5 sm:h-6 w-5 sm:w-6" /></div>
           </div>
         </div>
         <div className="flex-1 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 lg:gap-12">
@@ -21,16 +21,16 @@ const Footer = () => (
           <div className="text-center sm:text-left">
             <h3 className="font-semibold mb-2 sm:mb-3 text-base sm:text-lg">The Surfer</h3>
             <ul className="space-y-1 sm:space-y-2">
-              <li><a href="#" className="text-xs sm:text-sm hover:underline">Blog</a></li>
-              <li><a href="#" className="text-xs sm:text-sm hover:underline">Contact us</a></li>
+              <li className="text-xs sm:text-sm">Blog</li>
+              <li className="text-xs sm:text-sm">Contact us</li>
             </ul>
           </div>
           <div className="text-center sm:text-left sm:col-span-2 lg:col-span-1">
             <h3 className="font-semibold mb-2 sm:mb-3 text-base sm:text-lg">Support</h3>
             <ul className="space-y-1 sm:space-y-2">
-              <li><a href="#" className="text-xs sm:text-sm hover:underline">Terms of Conditions</a></li>
-              <li><a href="#" className="text-xs sm:text-sm hover:underline">Imprint</a></li>
-              <li><a href="#" className="text-xs sm:text-sm hover:underline">Privacy policy</a></li>
+              <li className="text-xs sm:text-sm">Terms of Conditions</li>
+              <li className="text-xs sm:text-sm">Imprint</li>
+              <li className="text-xs sm:text-sm">Privacy policy</li>
             </ul>
           </div>
         </div>
